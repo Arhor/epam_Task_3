@@ -13,29 +13,14 @@ public class Bus extends Thread {
 	@Override
 	public void run() {
 		int n = route.size();
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 25; i++) {
 			int station_number = i % n;
 			Station current = route.get(station_number);
 			
-//			System.out.printf("Bus: %d, station: %s%n", busNumber, current.getName());
-//			System.out.printf("before: station - %d, bus - %d%n", current.getWaiting(), passengers);
-			
-			// выход/выход пассажиров
 			int leaving = (int)(Math.random() * getPassengers() + 0.5);
 			passengers -= leaving;
-			int entering = current.exchange(leaving, maxCapacity - passengers, busNumber);
+			int entering = current.exchange(leaving, maxCapacity - passengers, this);
 			passengers += entering;
-
-//			System.out.printf(" after: station - %d, bus - %d%n", current.getWaiting(), passengers);
-//			System.out.printf("leaved - %d, entered - %d%n%n", leaving, entering);
-			
-			try {
-				int smoking = (int)(Math.random() * 500 + 0.5);
-				Thread.sleep(smoking);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 	}
 

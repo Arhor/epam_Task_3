@@ -1,40 +1,38 @@
 package by.epam.training.model;
 
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.TimeUnit;
 
 public class Station {
 	
 	private String name;
 	private int waiting;
-	private Lock locking = new ReentrantLock();
-	private Condition isFree = locking.newCondition();
 	
-	//TODO: реализовать способ принимать сразу несколько потоков (ограниченное кол-во)
+	private final Semaphore semaphore = new Semaphore(2, true);
 	
-	public int exchange(int leaving, int freeSeats, int busNumber) {
+	public int exchange(int leaving, int freeSeats, Bus bus) {
+		int entering = 0;
 		try {
-			locking.lock();
-			System.out.printf("Station %s is locked by bus N %d%n", name, busNumber);
+			semaphore.acquire();
 			
 			int passengers = 25 - freeSeats + leaving;
 			
-			System.out.printf("\tbefore: station - %d, bus - %d%n", waiting, passengers);
+			System.out.printf("Bus N %d arrived to station '%s' (bus: %d, station: %d)%n%n", bus.getBusNumber(), name, passengers, waiting);
 			
-			int entering = (int)(Math.random() * waiting + 0.5);
+			entering = (int)(Math.random() * waiting + 0.5);
 			entering = entering > freeSeats ? freeSeats : entering;
 			waiting += leaving - entering;
 			
-			System.out.printf("\t after: station - %d, bus - %d%n", waiting, passengers - leaving + entering); // try
-			System.out.printf("\tleaved - %d, entered - %d%n", leaving, entering);
+			TimeUnit.MILLISECONDS.sleep((int)(Math.random() * 1500 + 0.5));
 			
-			System.out.printf("Station %s is unlocked by bus N %d%n%n", name, busNumber);
-			return entering;
+			System.out.printf("Bus N %d departed from station '%s' (bus: %d, station %d, leaved %d, enetered %d)%n%n", bus.getBusNumber(), name, passengers - leaving + entering, waiting, leaving, entering);
+			
+		}catch(InterruptedException e) {
+			e.printStackTrace();
 		} finally {
-			isFree.signal();
-			locking.unlock();
+			semaphore.release();
 		}
+		return entering;
 	}
 	
 	public Station(String name) {

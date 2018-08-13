@@ -23,6 +23,14 @@ public class Runner {
 		Bus bus_2 = new Bus();
 		Bus bus_3 = new Bus();
 		
+		int before = 0;
+		
+		for (Station st : route) {
+			before += st.getWaiting();
+		}
+		
+		System.out.println("Total before: " + before);
+		
 		bus_1.setRoute(route);
 		bus_2.setRoute(route);
 		bus_3.setRoute(route);
@@ -41,5 +49,13 @@ public class Runner {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		int total = 0;
+		for (Station st : route) {
+			total += st.getWaiting();
+		}
+		total += bus_1.getPassengers();
+		total += bus_2.getPassengers();
+		total += bus_3.getPassengers();
+		System.out.println("Total after: " + total);
 	}
 }
