@@ -10,11 +10,12 @@ import org.apache.logging.log4j.Logger;
 
 public class Bus extends Thread {
 
+	public final int MAX_CAPACITY = 25;
+	
     private static final Logger LOG = LogManager.getLogger(Bus.class);
 
     private int busNumber;
     private int passengers;
-    private final int MAX_CAPACITY = 25;
     private List<Station> route = new ArrayList<>();
     private Exchanger<Integer> exchanger;
     
@@ -77,12 +78,35 @@ public class Bus extends Thread {
         return route;
     }
 
+    public void setExchanger(Exchanger<Integer> exchanger) {
+        this.exchanger = exchanger;
+    }
+    
     public Exchanger<Integer> getExchanger() {
         return exchanger;
     }
 
-    public void setExchanger(Exchanger<Integer> exchanger) {
-        this.exchanger = exchanger;
+    @Override
+    public boolean equals(Object obj) {
+    	if (obj == this) { return true; }
+    	if (obj == null) { return false; }
+    	if (obj.getClass() != getClass()) { return false; }
+    	Bus bus = (Bus)obj;
+    	if (bus.getBusNumber() != busNumber) { return false; }
+    	if (bus.getPassengers() != passengers) { return false; }
+    	if (bus.MAX_CAPACITY != MAX_CAPACITY) { return false; }
+    	if (bus.getRoute() == null) {
+    		return bus.getRoute() == route;
+    	} else if (!bus.getRoute().equals(route)) {
+    		return false;
+    	}
+    	return true;
+    }
+    
+    @Override
+    public int hashCode() {
+    	return (passengers + busNumber + MAX_CAPACITY) * 31 
+    			+ (route == null ? 0 : route.hashCode());
     }
     
     @Override
@@ -92,11 +116,5 @@ public class Bus extends Thread {
     			+ "number: " + getBusNumber()
     			+ ", passengers: " + getPassengers()
     			+ ", max capacity: " + MAX_CAPACITY;
-    }
-    
-    @Override
-    public int hashCode() {
-    	return (passengers + busNumber + MAX_CAPACITY) * 31 
-    			+ (route == null ? 0 : route.hashCode());
     }
 }

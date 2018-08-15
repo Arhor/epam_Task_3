@@ -97,14 +97,6 @@ public class Station {
     }
 
     @Override
-    public String toString() {
-        return getClass().getSimpleName()
-                + "@"
-                + "name: " + getName()
-                + ", waiting people: " + getWaiting();
-    }
-    
-    @Override
     public boolean equals(Object obj) {
     	if (obj == this) { return true; }
     	if (obj == null) { return false; }
@@ -122,5 +114,13 @@ public class Station {
     @Override
     public int hashCode() {
     	return waiting * 31 + (name == null ? 0 : name.hashCode());
+    }
+    
+    @Override
+    public String toString() {
+        return getClass().getSimpleName()
+                + "@"
+                + "name: " + getName()
+                + ", waiting people: " + getWaiting();
     }
 }
