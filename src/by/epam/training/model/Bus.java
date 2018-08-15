@@ -17,6 +17,10 @@ public class Bus extends Thread {
     private final int MAX_CAPACITY = 25;
     private List<Station> route = new ArrayList<>();
     private Exchanger<Integer> exchanger;
+    
+    public Bus(int busNumber) {
+    	setBusNumber(busNumber);
+    }
 
     @Override
     public void run() {
@@ -79,5 +83,20 @@ public class Bus extends Thread {
 
     public void setExchanger(Exchanger<Integer> exchanger) {
         this.exchanger = exchanger;
+    }
+    
+    @Override
+    public String toString() {
+    	return getClass().getSimpleName()
+    			+ "@"
+    			+ "number: " + getBusNumber()
+    			+ ", passengers: " + getPassengers()
+    			+ ", max capacity: " + MAX_CAPACITY;
+    }
+    
+    @Override
+    public int hashCode() {
+    	return (passengers + busNumber + MAX_CAPACITY) * 31 
+    			+ (route == null ? 0 : route.hashCode());
     }
 }

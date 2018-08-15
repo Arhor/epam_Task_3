@@ -100,7 +100,27 @@ public class Station {
     public String toString() {
         return getClass().getSimpleName()
                 + "@"
-                + getName() + ", "
-                + getWaiting();
+                + "name: " + getName()
+                + ", waiting people: " + getWaiting();
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+    	if (obj == this) { return true; }
+    	if (obj == null) { return false; }
+    	if (obj.getClass() != getClass()) { return false; }
+    	Station station = (Station)obj;
+    	if (station.getWaiting() != waiting) { return false; }
+    	if (name == null) {
+    		return name == station.getName();
+    	} else if (!name.equals(station.getName())) {
+    		return false;
+    	}
+    	return true;
+    }
+    
+    @Override
+    public int hashCode() {
+    	return waiting * 31 + (name == null ? 0 : name.hashCode());
     }
 }
