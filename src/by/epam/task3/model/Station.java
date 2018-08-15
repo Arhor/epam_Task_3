@@ -1,4 +1,4 @@
-package by.epam.training.model;
+package by.epam.task3.model;
 
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.Semaphore;
@@ -16,12 +16,17 @@ public class Station {
     private static final Logger LOG = LogManager.getLogger(Station.class);
 
     private String name;
-    private int waiting;
-    private final Semaphore semaphore = new Semaphore(2, true);
-    private final Exchanger<Integer> ex = new Exchanger<Integer>();
-    private final Lock locking = new ReentrantLock();
-    private final Condition condition = locking.newCondition();
+    private int passengers;
+    private Semaphore semaphore = new Semaphore(2, true);
+    private Exchanger<Integer> ex = new Exchanger<Integer>();
+    private Lock locking = new ReentrantLock();
+    private Condition condition = locking.newCondition();
 
+    public Station(String name) {
+        setName(name);
+        setPassengers((int)(Math.random() * 100 + 1));
+    }
+    
     public void connect(Bus bus) {
         try {
             semaphore.acquire();
@@ -38,8 +43,9 @@ public class Station {
                             + " at station [" + name + "]\n");
                 } catch (InterruptedException e) {
                     LOG.error("Interrupted exception occured", e);
+                    Thread.currentThread().interrupt();
                 } catch (TimeoutException e) {
-                    LOG.debug("There is not bus to swap passengers", e);
+                    LOG.debug("There is not bus to swap passengers");
                 } finally {
                     if (swap > -1) {
                         bus.setPassengers(swap);
@@ -52,8 +58,7 @@ public class Station {
             int freeSeats = bus.getFreeSeats();
             int entering = getEntering(freeSeats);
             bus.enter(entering);
-            waiting += leaving;
-
+            passengers += leaving;
         }catch(InterruptedException e) {
             LOG.error("Interrupted exception occured", e);;
         } finally {
@@ -61,17 +66,12 @@ public class Station {
         }
     }
 
-    public Station(String name) {
-        setName(name);
-        setWaiting((int)(Math.random() * 100 + 1));
-    }
-
     public int getEntering(int freeSeats) {
         try {
             locking.lock();
-            int entering = (int)(Math.random() * waiting + 0.5);
+            int entering = (int)(Math.random() * passengers + 0.5);
             entering = entering <= freeSeats ? entering : freeSeats;
-            waiting -= entering;
+            passengers -= entering;
             return entering;
         } finally {
             condition.signal();
@@ -88,12 +88,12 @@ public class Station {
         return name;
     }
 
-    public void setWaiting(int waiting) {
-        this.waiting = waiting;
+    public void setPassengers(int passengers) {
+        this.passengers = passengers;
     }
 
-    public int getWaiting() {
-        return waiting;
+    public int getPassengers() {
+        return passengers;
     }
 
     @Override
@@ -102,7 +102,7 @@ public class Station {
     	if (obj == null) { return false; }
     	if (obj.getClass() != getClass()) { return false; }
     	Station station = (Station)obj;
-    	if (station.getWaiting() != waiting) { return false; }
+    	if (station.getPassengers() != passengers) { return false; }
     	if (name == null) {
     		return name == station.getName();
     	} else if (!name.equals(station.getName())) {
@@ -113,7 +113,7 @@ public class Station {
     
     @Override
     public int hashCode() {
-    	return waiting * 31 + (name == null ? 0 : name.hashCode());
+    	return passengers * 31 + (name == null ? 0 : name.hashCode());
     }
     
     @Override
@@ -121,6 +121,6 @@ public class Station {
         return getClass().getSimpleName()
                 + "@"
                 + "name: " + getName()
-                + ", waiting people: " + getWaiting();
+                + ", passengers: " + getPassengers();
     }
 }

@@ -1,4 +1,4 @@
-package by.epam.training.runner;
+package by.epam.task3.runner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import by.epam.training.model.Bus;
-import by.epam.training.model.Station;
+import by.epam.task3.model.Bus;
+import by.epam.task3.model.Station;
 
 public class Runner {
 	
@@ -19,7 +19,6 @@ public class Runner {
 
 	public static void main(String[] args) {
 		//only for test purpose
-		
 		List<Station> route = new ArrayList<>();
 		
 		route.add(new Station("Yanki Luchiny"));
@@ -40,13 +39,12 @@ public class Runner {
 //		executor.shutdown();
 		
 		for (int i = 0; i < 5; i ++) {
-			busDepot.add(new Bus(i + 1));
-			busDepot.get(i).setRoute(route);
+			busDepot.add(new Bus(i + 1, route));
 		}
 		
 		int before = 0;
 		for (Station st : route) {
-			before += st.getWaiting();
+			before += st.getPassengers();
 		}
 		
 		LOG.info("Total before: " + before + "\n");
@@ -64,7 +62,7 @@ public class Runner {
 		}
 		int total = 0;
 		for (Station st : route) {
-			total += st.getWaiting();
+			total += st.getPassengers();
 		}
 		for (Bus bus : busDepot) {
 			total += bus.getPassengers();

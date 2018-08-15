@@ -1,4 +1,4 @@
-package by.epam.training.model;
+package by.epam.task3.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,17 +10,17 @@ import org.apache.logging.log4j.Logger;
 
 public class Bus extends Thread {
 
-	public final int MAX_CAPACITY = 25;
+	private static final Logger LOG = LogManager.getLogger(Bus.class);
 	
-    private static final Logger LOG = LogManager.getLogger(Bus.class);
-
+	public final int MAX_CAPACITY = 25;
     private int busNumber;
     private int passengers;
     private List<Station> route = new ArrayList<>();
     private Exchanger<Integer> exchanger;
     
-    public Bus(int busNumber) {
+    public Bus(int busNumber, List<Station> route) {
     	setBusNumber(busNumber);
+    	setRoute(route);
     }
 
     @Override

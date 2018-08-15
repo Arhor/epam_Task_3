@@ -374,3 +374,20 @@
 	at java.util.concurrent.Exchanger.exchange(Unknown Source)
 	at by.epam.training.model.Station.connect(Station.java:33)
 	at by.epam.training.model.Bus.run(Bus.java:31)
+18:13:59 DEBUG - Thread-5 [Station]:connect:47 There is not bus to swap passengers - java.util.concurrent.TimeoutException
+	at java.util.concurrent.Exchanger.exchange(Exchanger.java:626)
+	at by.epam.task3.model.Station.connect(Station.java:38)
+	at by.epam.task3.model.Bus.run(Bus.java:31)
+18:14:01 DEBUG - Thread-5 [Station]:connect:47 There is not bus to swap passengers - java.util.concurrent.TimeoutException
+	at java.util.concurrent.Exchanger.exchange(Exchanger.java:626)
+	at by.epam.task3.model.Station.connect(Station.java:38)
+	at by.epam.task3.model.Bus.run(Bus.java:31)
+18:14:02 DEBUG - Thread-5 [Station]:connect:47 There is not bus to swap passengers - java.util.concurrent.TimeoutException
+	at java.util.concurrent.Exchanger.exchange(Exchanger.java:626)
+	at by.epam.task3.model.Station.connect(Station.java:38)
+	at by.epam.task3.model.Bus.run(Bus.java:31)
+18:14:04 DEBUG - Thread-5 [Station]:connect:47 There is not bus to swap passengers - java.util.concurrent.TimeoutException
+	at java.util.concurrent.Exchanger.exchange(Exchanger.java:626)
+	at by.epam.task3.model.Station.connect(Station.java:38)
+	at by.epam.task3.model.Bus.run(Bus.java:31)
+18:31:08 DEBUG - Thread-1 [Station]:connect:47 There is not bus to swap passengers - 18:31:09 DEBUG - Thread-1 [Station]:connect:47 There is not bus to swap passengers - 18:31:11 DEBUG - Thread-1 [Station]:connect:47 There is not bus to swap passengers - 00:47:07 DEBUG - Thread-1 [Station]:connect:48 There is not bus to swap passengers - 00:47:09 DEBUG - Thread-1 [Station]:connect:48 There is not bus to swap passengers - 00:47:10 DEBUG - Thread-1 [Station]:connect:48 There is not bus to swap passengers - 
