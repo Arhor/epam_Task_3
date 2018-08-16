@@ -30,16 +30,18 @@ public class Station {
     public void connect(Bus bus) {
         try {
             semaphore.acquire();
+            LOG.info(String.format("Bus #%d arrived to '%s' station%n",
+            		bus.getBusNumber(), name));
             bus.setExchanger(ex);
-            int leaving = bus.exit();
+            int leaving = bus.leaving();
+            int swap = -1;
             if (bus.getPassengers() > 0) {
-                int swap = -1;
                 try {
                     swap = ex.exchange(bus.getPassengers(), 
                             1000,
                             TimeUnit.MILLISECONDS);
                     LOG.info("Before: " + bus.getPassengers() 
-                            + " in the bus # " + bus.getBusNumber()
+                            + " in the bus #" + bus.getBusNumber()
                             + " at station [" + name + "]\n");
                 } catch (InterruptedException e) {
                     LOG.error("Interrupted exception occured", e);
@@ -50,15 +52,19 @@ public class Station {
                     if (swap > -1) {
                         bus.setPassengers(swap);
                         LOG.info(" After: " + bus.getPassengers()
-                                + " in the bus # " + bus.getBusNumber()
+                                + " in the bus #" + bus.getBusNumber()
                                 + " at station [" + name + "]\n");
                     }	
                 }
             }
             int freeSeats = bus.getFreeSeats();
             int entering = getEntering(freeSeats);
-            bus.enter(entering);
+            bus.entering(entering);
             passengers += leaving;
+            LOG.info(String.format("Bus #%d departed from '%s' station:"
+            		+ " %d left, %d entered, %d swapped%n",
+            		bus.getBusNumber(), name, leaving, entering,
+            		(swap == -1 ? 0 : swap)));
         }catch(InterruptedException e) {
             LOG.error("Interrupted exception occured", e);;
         } finally {
@@ -102,10 +108,10 @@ public class Station {
     	if (obj == null) { return false; }
     	if (obj.getClass() != getClass()) { return false; }
     	Station station = (Station)obj;
-    	if (station.getPassengers() != passengers) { return false; }
+    	if (station.passengers != passengers) { return false; }
     	if (name == null) {
-    		return name == station.getName();
-    	} else if (!name.equals(station.getName())) {
+    		return name == station.name;
+    	} else if (!name.equals(station.name)) {
     		return false;
     	}
     	return true;
@@ -120,7 +126,7 @@ public class Station {
     public String toString() {
         return getClass().getSimpleName()
                 + "@"
-                + "name: " + getName()
-                + ", passengers: " + getPassengers();
+                + "name: " + name
+                + ", passengers: " + passengers;
     }
 }

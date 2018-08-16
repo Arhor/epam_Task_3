@@ -1,7 +1,5 @@
 package by.epam.task3.model;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.TimeUnit;
 
@@ -15,10 +13,10 @@ public class Bus extends Thread {
 	public final int MAX_CAPACITY = 25;
     private int busNumber;
     private int passengers;
-    private List<Station> route = new ArrayList<>();
+    private Route route;
     private Exchanger<Integer> exchanger;
     
-    public Bus(int busNumber, List<Station> route) {
+    public Bus(int busNumber, Route route) {
     	setBusNumber(busNumber);
     	setRoute(route);
     }
@@ -39,14 +37,14 @@ public class Bus extends Thread {
     }
 
     // passengers leave the bus
-    public int exit() {
+    public int leaving() {
         int leaving = (int)(Math.random() * passengers + 0.5);
         passengers -= leaving;
         return leaving;
     }
 
     // passengers enter the bus
-    public void enter(int entering) {
+    public void entering(int entering) {
         passengers += entering;
     }
 
@@ -70,11 +68,11 @@ public class Bus extends Thread {
         return passengers;
     }
 
-    public void setRoute(List<Station> route) {
+    public void setRoute(Route route) {
         this.route = route;
     }
 
-    public List<Station> getRoute() {
+    public Route getRoute() {
         return route;
     }
 
@@ -92,12 +90,12 @@ public class Bus extends Thread {
     	if (obj == null) { return false; }
     	if (obj.getClass() != getClass()) { return false; }
     	Bus bus = (Bus)obj;
-    	if (bus.getBusNumber() != busNumber) { return false; }
-    	if (bus.getPassengers() != passengers) { return false; }
+    	if (bus.busNumber != busNumber) { return false; }
+    	if (bus.passengers != passengers) { return false; }
     	if (bus.MAX_CAPACITY != MAX_CAPACITY) { return false; }
-    	if (bus.getRoute() == null) {
-    		return bus.getRoute() == route;
-    	} else if (!bus.getRoute().equals(route)) {
+    	if (route == null) {
+    		return route == bus.route;
+    	} else if (!route.equals(bus.route)) {
     		return false;
     	}
     	return true;
@@ -113,8 +111,8 @@ public class Bus extends Thread {
     public String toString() {
     	return getClass().getSimpleName()
     			+ "@"
-    			+ "number: " + getBusNumber()
-    			+ ", passengers: " + getPassengers()
+    			+ "number: " + busNumber
+    			+ ", passengers: " + passengers
     			+ ", max capacity: " + MAX_CAPACITY;
     }
 }
