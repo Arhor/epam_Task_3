@@ -1,11 +1,8 @@
 package by.epam.task3.runner;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-//import java.util.concurrent.ExecutorService;
-//import java.util.concurrent.Executors;
-//import java.util.concurrent.Future;
-//import java.util.concurrent.Callable;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 import by.epam.task3.model.Bus;
 import by.epam.task3.model.Route;
 import by.epam.task3.model.Station;
+import by.epam.task3.service.Router;
 
 public class Runner {
 	
@@ -20,21 +18,26 @@ public class Runner {
 
 	public static void main(String[] args) {
 		
-		Route route = new Route(6);
+		Route one = Route.FIRST;
+		Route two = Route.SECOND;
 		
-		route.getRoute().add(new Station("Yanki Luchiny"));
-		route.getRoute().add(new Station("School N40"));
-		route.getRoute().add(new Station("vulica Hashkevicha"));
-		route.getRoute().add(new Station("zavulak Chyrzeuskih"));
-		route.getRoute().add(new Station("Igumenski trakt"));
+		try {
+			Router.initialize();
+			Router.setRoute(one);
+			Router.setRoute(two);
+		} catch (IOException e) {
+			LOG.error("I/O exception occured: ", e);
+			return;
+		}
 		
 		List<Bus> busDepot = new ArrayList<>();
 		for (int i = 0; i < 5; i ++) {
-			busDepot.add(new Bus(i + 1, route));
+			Route toAdd = Math.random() > 0.5 ? one : two;
+			busDepot.add(new Bus(i + 1, toAdd));
 		}
 		
 		int before = 0;
-		for (Station st : route.getRoute()) {
+		for (Station st : one.getRoute()) {
 			before += st.getPassengers();
 		}
 		LOG.info("Total before: " + before + "\n");
@@ -51,12 +54,12 @@ public class Runner {
 		}
 		
 		int total = 0;
-		for (Station st : route.getRoute()) {
+		for (Station st : one.getRoute()) {
 			total += st.getPassengers();
 		}
 		for (Bus bus : busDepot) {
 			total += bus.getPassengers();
 		}
-		LOG.info("Total after: " + total);
+		LOG.info("Total after: " + total + "\n");
 	}
 }
