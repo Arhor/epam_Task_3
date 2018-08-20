@@ -10,17 +10,17 @@ import org.apache.logging.log4j.Logger;
 
 
 public abstract class PropertiesHandler {
-	
-	private static final Logger LOG = LogManager.getLogger();
+    
+    private static final Logger LOG = LogManager.getLogger();
 
-	public static Properties readProperties(String path) throws IOException{
-		try (FileInputStream fis = new FileInputStream(path)) {
-			Properties prop = new Properties();
-			prop.load(fis);
-			return prop;
-		} catch (IOException e) {
-			LOG.error("I/O exception occured: ", e);
-			throw e;
-		}
-	}
+    public static Properties readProperties(String path) throws IOException{
+        try (FileInputStream fis = new FileInputStream(path)) {
+            Properties prop = new Properties();
+            prop.load(fis);
+            return prop;
+        } catch (IOException e) {
+            LOG.error("I/O exception occured: ", e);
+            throw e;
+        }
+    }
 }

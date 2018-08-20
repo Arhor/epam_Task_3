@@ -8,17 +8,17 @@ import org.apache.logging.log4j.Logger;
 
 public class Bus extends Thread {
 
-	private static final Logger LOG = LogManager.getLogger(Bus.class);
-	
-	public final int MAX_CAPACITY = 25;
+    private static final Logger LOG = LogManager.getLogger(Bus.class);
+    
+    public final int MAX_CAPACITY = 25;
     private int busNumber;
     private int passengers;
     private Route route;
     private Exchanger<Integer> exchanger;
     
     public Bus(int busNumber, Route route) {
-    	setBusNumber(busNumber);
-    	setRoute(route);
+        setBusNumber(busNumber);
+        setRoute(route);
     }
 
     @Override
@@ -87,33 +87,33 @@ public class Bus extends Thread {
 
     @Override
     public boolean equals(Object obj) {
-    	if (obj == this) { return true; }
-    	if (obj == null) { return false; }
-    	if (obj.getClass() != getClass()) { return false; }
-    	Bus bus = (Bus)obj;
-    	if (bus.busNumber != busNumber) { return false; }
-    	if (bus.passengers != passengers) { return false; }
-    	if (bus.MAX_CAPACITY != MAX_CAPACITY) { return false; }
-    	if (route == null) {
-    		return route == bus.route;
-    	} else if (!route.equals(bus.route)) {
-    		return false;
-    	}
-    	return true;
+        if (obj == this) { return true; }
+        if (obj == null) { return false; }
+        if (obj.getClass() != getClass()) { return false; }
+        Bus bus = (Bus)obj;
+        if (bus.busNumber != busNumber) { return false; }
+        if (bus.passengers != passengers) { return false; }
+        if (bus.MAX_CAPACITY != MAX_CAPACITY) { return false; }
+        if (route == null) {
+            return route == bus.route;
+        } else if (!route.equals(bus.route)) {
+            return false;
+        }
+        return true;
     }
     
     @Override
     public int hashCode() {
-    	return (passengers + busNumber + MAX_CAPACITY) * 31 
-    			+ (route == null ? 0 : route.hashCode());
+        return (passengers + busNumber + MAX_CAPACITY) * 31 
+                + (route == null ? 0 : route.hashCode());
     }
     
     @Override
     public String toString() {
-    	return getClass().getSimpleName()
-    			+ "@"
-    			+ "number: " + busNumber
-    			+ ", passengers: " + passengers
-    			+ ", max capacity: " + MAX_CAPACITY;
+        return getClass().getSimpleName()
+                + "@"
+                + "number: " + busNumber
+                + ", passengers: " + passengers
+                + ", max capacity: " + MAX_CAPACITY;
     }
 }

@@ -31,7 +31,7 @@ public class Station {
         try {
             semaphore.acquire();
             LOG.info(String.format("Bus #%d arrived to '%s' station%n",
-            		bus.getBusNumber(), name));
+                    bus.getBusNumber(), name));
             bus.setExchanger(ex);
             int leaving = bus.leaving();
             int swap = -1;
@@ -54,7 +54,7 @@ public class Station {
                         LOG.info(" After: " + bus.getPassengers()
                                 + " in the bus #" + bus.getBusNumber()
                                 + " at station [" + name + "]\n");
-                    }	
+                    }    
                 }
             }
             int freeSeats = bus.getFreeSeats();
@@ -62,9 +62,9 @@ public class Station {
             bus.entering(entering);
             passengers += leaving;
             LOG.info(String.format("Bus #%d departed from '%s' station:"
-            		+ " %d left, %d entered, %d swapped%n",
-            		bus.getBusNumber(), name, leaving, entering,
-            		(swap == -1 ? 0 : swap)));
+                    + " %d left, %d entered, %d swapped%n",
+                    bus.getBusNumber(), name, leaving, entering,
+                    (swap == -1 ? 0 : swap)));
         }catch(InterruptedException e) {
             LOG.error("Interrupted exception occured", e);;
         } finally {
@@ -104,22 +104,22 @@ public class Station {
 
     @Override
     public boolean equals(Object obj) {
-    	if (obj == this) { return true; }
-    	if (obj == null) { return false; }
-    	if (obj.getClass() != getClass()) { return false; }
-    	Station station = (Station)obj;
-    	if (station.passengers != passengers) { return false; }
-    	if (name == null) {
-    		return name == station.name;
-    	} else if (!name.equals(station.name)) {
-    		return false;
-    	}
-    	return true;
+        if (obj == this) { return true; }
+        if (obj == null) { return false; }
+        if (obj.getClass() != getClass()) { return false; }
+        Station station = (Station)obj;
+        if (station.passengers != passengers) { return false; }
+        if (name == null) {
+            return name == station.name;
+        } else if (!name.equals(station.name)) {
+            return false;
+        }
+        return true;
     }
     
     @Override
     public int hashCode() {
-    	return passengers * 31 + (name == null ? 0 : name.hashCode());
+        return passengers * 31 + (name == null ? 0 : name.hashCode());
     }
     
     @Override
