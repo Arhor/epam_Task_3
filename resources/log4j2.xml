@@ -3,13 +3,13 @@
 	<Appenders>
 		<Console name="Console" target="SYSTEM_OUT">
 			<PatternLayout pattern="%msg"/>
-			<LevelRangeFilter minLevel="INFO" maxLevel="INFO"/>
+			<LevelRangeFilter minLevel="INFO" maxLevel="DEBUG"/>
 		</Console>
 		<File name="ErrorLog" fileName="logs/error.log">
 			<PatternLayout pattern="%d{HH:mm:ss} %level - %t [%c{1}]:%M:%L %m - %throwable"/>
 			<LevelRangeFilter minLevel="ERROR" maxLevel="ERROR"/>
 		</File>
-		<File name="DebugLog" fileName="logs/error.log">
+		<File name="DebugLog" fileName="logs/debug.log">
 			<PatternLayout pattern="%d{HH:mm:ss} %level - %t [%c{1}]:%M:%L %m - %throwable"/>
 			<LevelRangeFilter minLevel="DEBUG" maxLevel="DEBUG"/>
 		</File>

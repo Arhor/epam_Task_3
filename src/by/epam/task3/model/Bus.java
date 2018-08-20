@@ -32,6 +32,7 @@ public class Bus extends Thread {
                 TimeUnit.MILLISECONDS.sleep((int)(Math.random() * 300 + 300)); // on the way...
             } catch (InterruptedException e) {
                 LOG.error("Interrupted exception occured", e);
+                Thread.currentThread().interrupt();
             }
         }
     }

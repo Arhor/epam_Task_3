@@ -47,7 +47,7 @@ public class Station {
                     LOG.error("Interrupted exception occured", e);
                     Thread.currentThread().interrupt();
                 } catch (TimeoutException e) {
-                    LOG.debug("There is not bus to swap passengers");
+                    LOG.debug("There is not bus to swap passengers\n");
                 } finally {
                     if (swap > -1) {
                         bus.setPassengers(swap);

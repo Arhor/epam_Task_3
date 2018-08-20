@@ -1,0 +1,127 @@
+02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:51:34 DEBUG - main [Router]:initialize:30 TEST
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: Ashen vale, passengers: 40
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: White house, passengers: 92
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: Rainbow forest, passengers: 50
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: End point, passengers: 67
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: Hello palace, passengers: 89
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: Long avenue, passengers: 1
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: Stright street, passengers: 93
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: Saints abbey, passengers: 25
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: Hammilton beach, passengers: 74
+ - 02:52:16 DEBUG - main [Router]:initialize:30 Station@name: Midnight avenue, passengers: 37
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: Ashen vale, passengers: 12
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: White house, passengers: 59
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: Rainbow forest, passengers: 28
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: End point, passengers: 98
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: Hello palace, passengers: 93
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: Long avenue, passengers: 79
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: Stright street, passengers: 64
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: Saints abbey, passengers: 74
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: Hammilton beach, passengers: 49
+ - 02:53:39 DEBUG - main [Router]:initialize:30 Station@name: Midnight avenue, passengers: 75
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 94
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 91
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 41
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 66
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 52
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 68
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 19
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 4
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 60
+ - 02:54:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 56
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 73
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 46
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 86
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 95
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 45
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 97
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 78
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 65
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 66
+ - 02:55:56 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 96
+ - 02:55:56 DEBUG - main [Router]:countPassengers:51 current key: 1
+ - 02:55:56 DEBUG - main [Router]:countPassengers:51 current key: 1
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 95
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 85
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 44
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 30
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 41
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 17
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 9
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 5
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 24
+ - 02:56:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 90
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 1
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 2
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 3
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 4
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 5
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 6
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 7
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 8
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 9
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 10
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 1
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 2
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 3
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 4
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 5
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 6
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 7
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 8
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 9
+ - 02:56:13 DEBUG - main [Router]:countPassengers:51 current key: 10
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 58
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 5
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 50
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 69
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 36
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 92
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 9
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 3
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 18
+ - 02:56:31 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 87
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 3
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 70
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 86
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 49
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 3
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 63
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 82
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 74
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 27
+ - 02:57:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 72
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 23
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 79
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 94
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 7
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 82
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 53
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 38
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 87
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 61
+ - 02:58:02 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 79
+ - 02:58:04 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers - 02:58:04 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers - 02:58:05 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers - 02:58:05 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers - 02:58:06 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers - 02:58:07 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers - 02:58:08 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 64
+ - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 86
+ - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 16
+ - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 34
+ - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 14
+ - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 49
+ - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 51
+ - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 80
+ - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 22
+ - 03:00:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 65
+ - 03:00:15 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 03:00:17 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 03:00:18 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 03:00:20 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 
