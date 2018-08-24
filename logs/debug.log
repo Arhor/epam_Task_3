@@ -124,4 +124,23 @@
  - 03:00:17 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
  - 03:00:18 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
  - 03:00:20 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 5
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 61
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 8
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 40
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 58
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 12
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 85
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 81
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 22
+ - 01:04:49 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 38
+ - 01:04:50 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 01:04:50 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 01:04:50 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 01:04:51 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 01:04:52 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 01:04:52 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 01:04:53 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 01:04:53 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 01:04:54 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
  - 
