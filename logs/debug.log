@@ -143,4 +143,270 @@
  - 01:04:53 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
  - 01:04:53 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
  - 01:04:54 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 14
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 53
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 87
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 26
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 72
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 74
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 15
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 100
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 50
+ - 21:38:13 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 33
+ - 21:38:14 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 21:38:16 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 21:38:17 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 21:38:19 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 21:38:20 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 71
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 72
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 61
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 7
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 13
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 75
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 72
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 96
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 27
+ - 21:39:34 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 17
+ - 21:39:36 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 21:39:37 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 21:39:38 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 21:39:39 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 21:39:40 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 21:39:42 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 11
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 92
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 72
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 51
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 50
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 70
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 1
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 21
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 85
+ - 21:43:19 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 56
+ - 21:43:20 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 21:43:22 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 21:43:23 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 21:43:24 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 3
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 39
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 10
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 54
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 78
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 96
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 58
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 20
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 65
+ - 21:44:07 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 57
+ - 21:44:08 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 21:44:10 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 21:44:11 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 21:44:13 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 76
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 2
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 48
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 90
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 43
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 47
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 26
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 30
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 80
+ - 21:46:14 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 19
+ - 21:46:15 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 21:46:16 DEBUG - Thread-4 [Bus]:run:31 moving to depot...
+ - 21:46:16 DEBUG - Thread-5 [Bus]:run:31 moving to depot...
+ - 21:46:16 DEBUG - Thread-1 [Bus]:run:31 moving to depot...
+ - 21:46:16 DEBUG - Thread-2 [Bus]:run:31 moving to depot...
+ - 21:46:17 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 21:46:19 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 21:46:19 DEBUG - Thread-3 [Bus]:run:31 moving to depot...
+ - 21:50:00 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Ashen vale, passengers: 75
+ - 21:50:00 DEBUG - main [Router]:initialize:30 Initialized: Station@name: White house, passengers: 62
+ - 21:50:00 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Rainbow forest, passengers: 65
+ - 21:50:00 DEBUG - main [Router]:initialize:30 Initialized: Station@name: End point, passengers: 34
+ - 21:50:00 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hello palace, passengers: 96
+ - 21:50:00 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Long avenue, passengers: 16
+ - 21:50:00 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Stright street, passengers: 70
+ - 21:50:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Saints abbey, passengers: 62
+ - 21:50:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Hammilton beach, passengers: 60
+ - 21:50:01 DEBUG - main [Router]:initialize:30 Initialized: Station@name: Midnight avenue, passengers: 96
+ - 21:50:02 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 21:50:03 DEBUG - Thread-5 [Bus]:run:35 moving to depot...
+ - 21:50:03 DEBUG - Thread-1 [Bus]:run:35 moving to depot...
+ - 21:50:03 DEBUG - Thread-3 [Bus]:run:35 moving to depot...
+ - 21:50:03 DEBUG - Thread-4 [Bus]:run:35 moving to depot...
+ - 21:50:03 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 21:50:05 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 21:50:06 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 21:50:07 DEBUG - Thread-2 [Bus]:run:35 moving to depot...
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: Ashen vale, passengers: 18
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: White house, passengers: 79
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: Rainbow forest, passengers: 6
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: End point, passengers: 57
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: Hello palace, passengers: 40
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: Long avenue, passengers: 24
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: Stright street, passengers: 66
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: Saints abbey, passengers: 35
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: Hammilton beach, passengers: 48
+ - 22:00:37 DEBUG - main [Router]:initialize:32 Initialized: Station@name: Midnight avenue, passengers: 76
+ - 22:00:38 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:00:38 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:00:39 DEBUG - Thread-3 [Bus]:run:32 moving to depot...
+ - 22:00:39 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:00:39 DEBUG - Thread-4 [Bus]:run:32 moving to depot...
+ - 22:00:40 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:00:40 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:00:40 DEBUG - Thread-5 [Bus]:run:32 moving to depot...
+ - 22:00:41 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:00:41 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:00:42 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:00:42 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:00:43 DEBUG - Thread-1 [Bus]:run:32 moving to depot...
+ - 22:00:43 DEBUG - Thread-2 [Bus]:run:32 moving to depot...
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Ashen vale, passengers: 55
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: White house, passengers: 98
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Rainbow forest, passengers: 39
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: End point, passengers: 49
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hello palace, passengers: 7
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Long avenue, passengers: 86
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Stright street, passengers: 13
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Saints abbey, passengers: 54
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hammilton beach, passengers: 22
+ - 22:06:46 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Midnight avenue, passengers: 63
+ - 22:06:47 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:06:49 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:06:50 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:06:52 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:06:52 DEBUG - Thread-1 [Bus]:run:32 moving to depot...
+ - 22:06:54 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:06:56 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:06:57 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:06:58 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:06:59 DEBUG - Thread-2 [Bus]:run:32 moving to depot...
+ - 22:07:01 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:03 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:04 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:05 DEBUG - Thread-3 [Bus]:run:32 moving to depot...
+ - 22:07:07 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:08 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:10 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:11 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:12 DEBUG - Thread-4 [Bus]:run:32 moving to depot...
+ - 22:07:13 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:15 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:16 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:18 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:07:18 DEBUG - Thread-5 [Bus]:run:32 moving to depot...
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Ashen vale, passengers: 90
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: White house, passengers: 35
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Rainbow forest, passengers: 44
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: End point, passengers: 9
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hello palace, passengers: 39
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Long avenue, passengers: 72
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Stright street, passengers: 19
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Saints abbey, passengers: 36
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hammilton beach, passengers: 17
+ - 22:08:23 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Midnight avenue, passengers: 83
+ - 22:08:24 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:08:25 DEBUG - Thread-1 [Bus]:run:32 moving to depot...
+ - 22:08:25 DEBUG - Thread-3 [Bus]:run:32 moving to depot...
+ - 22:08:25 DEBUG - Thread-4 [Bus]:run:32 moving to depot...
+ - 22:08:26 DEBUG - Thread-2 [Bus]:run:32 moving to depot...
+ - 22:08:26 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:08:28 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:08:28 DEBUG - Thread-5 [Bus]:run:32 moving to depot...
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Ashen vale, passengers: 27
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: White house, passengers: 9
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Rainbow forest, passengers: 27
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: End point, passengers: 46
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hello palace, passengers: 74
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Long avenue, passengers: 49
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Stright street, passengers: 100
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Saints abbey, passengers: 67
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hammilton beach, passengers: 87
+ - 22:09:57 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Midnight avenue, passengers: 63
+ - 22:09:59 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 22:10:00 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 22:10:02 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Ashen vale, passengers: 11
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: White house, passengers: 40
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Rainbow forest, passengers: 40
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: End point, passengers: 19
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hello palace, passengers: 58
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Long avenue, passengers: 13
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Stright street, passengers: 50
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Saints abbey, passengers: 32
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hammilton beach, passengers: 69
+ - 22:11:03 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Midnight avenue, passengers: 80
+ - 22:11:04 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:04 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:05 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:06 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:06 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:06 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:06 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:07 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:07 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:08 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:09 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:09 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Ashen vale, passengers: 44
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: White house, passengers: 46
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Rainbow forest, passengers: 62
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: End point, passengers: 59
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hello palace, passengers: 28
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Long avenue, passengers: 8
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Stright street, passengers: 93
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Saints abbey, passengers: 50
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Hammilton beach, passengers: 79
+ - 22:11:27 DEBUG - main [Router]:initialize:31 Initialized: Station@name: Midnight avenue, passengers: 27
+ - 22:11:28 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:28 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:29 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:30 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:30 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:31 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:11:33 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Ashen vale, passengers: 3
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: White house, passengers: 2
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Rainbow forest, passengers: 79
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: End point, passengers: 64
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Hello palace, passengers: 3
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Long avenue, passengers: 35
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Stright street, passengers: 3
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Saints abbey, passengers: 34
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Hammilton beach, passengers: 87
+ - 22:17:48 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Midnight avenue, passengers: 32
+ - 22:17:50 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:17:50 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:17:51 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:17:51 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:17:51 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:17:52 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:17:52 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:17:53 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:17:54 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Ashen vale, passengers: 52
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: White house, passengers: 87
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Rainbow forest, passengers: 49
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: End point, passengers: 75
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Hello palace, passengers: 78
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Long avenue, passengers: 15
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Stright street, passengers: 40
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Saints abbey, passengers: 35
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Hammilton beach, passengers: 34
+ - 22:20:04 DEBUG - main [Router]:initialize:34 Initialized: Station@name: Midnight avenue, passengers: 27
+ - 22:20:05 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:20:06 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:20:07 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 22:20:07 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:20:08 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 22:20:08 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 22:20:10 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 01:19:32 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 01:19:32 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 01:19:33 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 01:19:33 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 01:19:35 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 01:19:36 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
  - 

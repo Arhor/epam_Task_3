@@ -1,6 +1,5 @@
 package by.epam.task3.runner;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,14 +19,9 @@ public class Runner {
         Route one = Route.FIRST;
         Route two = Route.SECOND;
         
-        try {
-            Router.initialize();
-            Router.setRoute(one);
-            Router.setRoute(two);
-        } catch (IOException e) {
-            LOG.error("I/O exception occured: ", e);
-            return;
-        }
+        Router.initialize();
+        Router.setRoute(one);
+        Router.setRoute(two);
         
         LOG.info("Total before: " + Router.countPassengers() + "\n");
         
@@ -49,11 +43,6 @@ public class Runner {
             Thread.currentThread().interrupt();
         }
         
-        int inBus = 0;
-        for (Bus bus : busDepot) {
-            inBus += bus.getPassengers();
-        }
-        
-        LOG.info("Total after: " + (Router.countPassengers() + inBus) + "\n");
+        LOG.info("Total after: " + (Router.countPassengers()) + "\n");
     }
 }

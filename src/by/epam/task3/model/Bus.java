@@ -10,26 +10,31 @@ public class Bus extends Thread {
 
     private static final Logger LOG = LogManager.getLogger(Bus.class);
     
-    public final int MAX_CAPACITY = 25;
     private int busNumber;
     private int passengers;
-    private Route route;
+    private boolean toDepot;
+	private Route route;
+	
     private Exchanger<Integer> exchanger;
     
+    public final int MAX_CAPACITY = 25;
+    
     public Bus(int busNumber, Route route) {
-        setBusNumber(busNumber);
-        setRoute(route);
+    	this.busNumber = busNumber;
+    	this.route = route;
     }
 
     @Override
     public void run() {
-        int n = route.size();
-        for (int i = 0; i < 5; i++) {
-            int stationNumber = i % n;
-            Station current = route.get(stationNumber);
+        for (int i = 0; i < route.size(); i++) {
+        	if (i == route.size() - 1) {
+        		toDepot = true;
+        		LOG.info("Bus #"+ busNumber + " is moving to depot...\n");
+        	}
+            Station current = route.get(i);
             current.connect(this);
             try {
-                TimeUnit.MILLISECONDS.sleep((int)(Math.random() * 300 + 300)); // on the way...
+                TimeUnit.MILLISECONDS.sleep((int)(Math.random() * 300 + 300));
             } catch (InterruptedException e) {
                 LOG.error("Interrupted exception occured", e);
                 Thread.currentThread().interrupt();
@@ -39,7 +44,8 @@ public class Bus extends Thread {
 
     // passengers leave the bus
     public int leaving() {
-        int leaving = (int)(Math.random() * passengers + 0.5);
+        int leaving = toDepot ? passengers 
+                              : (int)(Math.random() * passengers + 0.5);
         passengers -= leaving;
         return leaving;
     }
@@ -50,7 +56,7 @@ public class Bus extends Thread {
     }
 
     public int getFreeSeats() {
-        return MAX_CAPACITY - passengers;
+        return toDepot ? 0 : MAX_CAPACITY - passengers;
     }
 
     public void setBusNumber(int busNumber) {
@@ -76,6 +82,10 @@ public class Bus extends Thread {
     public Route getRoute() {
         return route;
     }
+    
+    public boolean isToDepot() {
+		return toDepot;
+	}
 
     public void setExchanger(Exchanger<Integer> exchanger) {
         this.exchanger = exchanger;

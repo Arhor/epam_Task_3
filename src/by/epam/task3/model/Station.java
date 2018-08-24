@@ -17,14 +17,14 @@ public class Station {
 
     private String name;
     private int passengers;
+    
     private Semaphore semaphore = new Semaphore(2, true);
     private Exchanger<Integer> ex = new Exchanger<Integer>();
     private Lock locking = new ReentrantLock();
     private Condition condition = locking.newCondition();
 
     public Station(String name) {
-        setName(name);
-        setPassengers((int)(Math.random() * 100 + 1));
+    	this.name = name;
     }
     
     public void connect(Bus bus) {
@@ -57,8 +57,7 @@ public class Station {
                     }    
                 }
             }
-            int freeSeats = bus.getFreeSeats();
-            int entering = getEntering(freeSeats);
+            int entering = getEntering(bus);
             bus.entering(entering);
             passengers += leaving;
             LOG.info(String.format("Bus #%d departed from '%s' station:"
@@ -66,13 +65,15 @@ public class Station {
                     bus.getBusNumber(), name, leaving, entering,
                     (swap == -1 ? 0 : swap)));
         }catch(InterruptedException e) {
-            LOG.error("Interrupted exception occured", e);;
+            LOG.error("Interrupted exception occured", e);
+            Thread.currentThread().interrupt();
         } finally {
             semaphore.release();
         }
     }
 
-    public int getEntering(int freeSeats) {
+    public int getEntering(Bus bus) {
+    	int freeSeats = bus.getFreeSeats();
         try {
             locking.lock();
             int entering = (int)(Math.random() * passengers + 0.5);
@@ -83,7 +84,6 @@ public class Station {
             condition.signal();
             locking.unlock();
         }
-
     }
 
     public void setName(String name) {
