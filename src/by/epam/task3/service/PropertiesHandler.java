@@ -1,3 +1,7 @@
+/*
+ * class: PropertiesHandler
+ */
+
 package by.epam.task3.service;
 
 import java.io.FileInputStream;
@@ -7,6 +11,12 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * 
+ * 
+ * @version 1.0 25 Aug 2018
+ * @author Maxim Burishinets
+ */
 public abstract class PropertiesHandler {
     
     private static final Logger LOG = LogManager.getLogger();

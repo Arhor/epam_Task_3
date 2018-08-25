@@ -1,3 +1,7 @@
+/*
+ * class: Bus
+ */
+
 package by.epam.task3.model;
 
 import java.util.concurrent.Exchanger;
@@ -8,6 +12,13 @@ import org.apache.logging.log4j.Logger;
 
 import by.epam.task3.service.Route;
 
+/**
+ * Class Bus represents thread-object "bus", it's number, amount of passengers,
+ * route and methods of going through this route
+ * 
+ * @version 1.0 25 Aug 2018
+ * @author Maxim Burishinets
+ */
 public class Bus extends Thread {
 
     public final int MAX_CAPACITY = 25;
@@ -44,7 +55,11 @@ public class Bus extends Thread {
         }
     }
 
-    // passengers leave the bus
+    /**
+     * Returns randomly generated number of passengers leaving the bus
+     * 
+     * @return number of passengers leaving the bus
+     */
     public int leaving() {
         int leaving = toDepot ? passengers 
                               : (int)(Math.random() * passengers + 0.5);
@@ -52,11 +67,21 @@ public class Bus extends Thread {
         return leaving;
     }
 
-    // passengers enter the bus
+    /**
+     * Accepts number of passengers to add to the bus
+     * 
+     * @param entering - number of passengers entering the bus
+     */
     public void entering(int entering) {
         passengers += entering;
     }
 
+    /**
+     * Returns the number of available seats in the bus according to whether
+     * the bus goes to the depot or not
+     * 
+     * @return number of free seats in the bus
+     */
     public int getFreeSeats() {
         return toDepot ? 0 : MAX_CAPACITY - passengers;
     }

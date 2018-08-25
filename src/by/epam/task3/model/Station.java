@@ -1,3 +1,7 @@
+/*
+ * class: Station
+ */
+
 package by.epam.task3.model;
 
 import java.util.concurrent.Exchanger;
@@ -11,6 +15,14 @@ import java.util.concurrent.locks.Condition;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Class Station represents resource-object "station", it's name, amount of
+ * passengers and methods which help to exchange passengers between arrived
+ * buses (also just leave and enter the bus)
+ * 
+ * @version 1.0 25 Aug 2018
+ * @author Maxim Burishinets
+ */
 public class Station {
 
     private static final Logger LOG = LogManager.getLogger(Station.class);
@@ -27,6 +39,12 @@ public class Station {
         this.name = name;
     }
     
+    /**
+     * Method connect invokes by arrived bus, includes "bus-leaving",
+     * "passengers exchange" and "bus-entering" stages
+     * 
+     * @param bus - arrived bus
+     */
     public void connect(Bus bus) {
         try {
             semaphore.acquire();
@@ -72,6 +90,11 @@ public class Station {
         }
     }
 
+    /**
+     * 
+     * @param bus - bus for passengers to enter to
+     * @return number of passengers 
+     */
     public int getEntering(Bus bus) {
         int freeSeats = bus.getFreeSeats();
         try {

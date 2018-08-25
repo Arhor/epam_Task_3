@@ -1,3 +1,7 @@
+/*
+ * class: Router
+ */
+
 package by.epam.task3.service;
 
 import java.util.HashMap;
@@ -9,6 +13,12 @@ import org.apache.logging.log4j.Logger;
 
 import by.epam.task3.model.Station;
 
+/**
+ * 
+ * 
+ * @version 2.0 25 Aug 2018
+ * @author Maxim Burishinets
+ */
 public enum Router {
 
     ROUTER;

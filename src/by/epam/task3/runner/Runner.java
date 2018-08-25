@@ -1,3 +1,7 @@
+/*
+ * class: Runner
+ */
+
 package by.epam.task3.runner;
 
 import java.util.ArrayList;
@@ -9,6 +13,12 @@ import org.apache.logging.log4j.Logger;
 import by.epam.task3.model.Bus;
 import by.epam.task3.service.Router;
 
+/**
+ * 
+ * 
+ * @version 1.0 25 Aug 2018
+ * @author Maxim Burishinets
+ */
 public class Runner {
 
     public static final int DEPOT_SIZE = 5;
@@ -18,7 +28,8 @@ public class Runner {
         
         Router router = Router.ROUTER;
         
-        LOG.info("\nTotal passengers before: " + router.countPassengers() + "\n\n");
+        LOG.info("\nTotal passengers before: "
+                + router.countPassengers() + "\n\n");
         
         List<Bus> busDepot = new ArrayList<>();
         int[] availible = router.getAvailibleRoutes();
@@ -40,6 +51,7 @@ public class Runner {
             Thread.currentThread().interrupt();
         }
         
-        LOG.info("\nTotal passengers after: " + router.countPassengers() + "\n");
+        LOG.info("\nTotal passengers after: "
+                + router.countPassengers() + "\n");
     }
 }

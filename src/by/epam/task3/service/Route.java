@@ -1,3 +1,7 @@
+/*
+ * class: Route
+ */
+
 package by.epam.task3.service;
 
 import java.util.ArrayList;
@@ -5,6 +9,12 @@ import java.util.List;
 
 import by.epam.task3.model.Station;
 
+/**
+ * 
+ * 
+ * @version 2.0 25 Aug 2018
+ * @author Maxim Burishinets
+ */
 public class Route {
 
     private int id;
