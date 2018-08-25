@@ -409,4 +409,60 @@
  - 01:19:33 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
  - 01:19:35 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
  - 01:19:36 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 02:24:37 DEBUG - main [Router]:initializeStations:44 Key = station
+ - 02:25:35 DEBUG - main [Router]:initializeStations:44 Key = station.10
+ - 02:25:36 DEBUG - main [Router]:initializeStations:44 Key = station.9
+ - 02:25:36 DEBUG - main [Router]:initializeStations:44 Key = station.8
+ - 02:25:36 DEBUG - main [Router]:initializeStations:44 Key = station.7
+ - 02:25:36 DEBUG - main [Router]:initializeStations:44 Key = station.6
+ - 02:25:36 DEBUG - main [Router]:initializeStations:44 Key = station.5
+ - 02:25:36 DEBUG - main [Router]:initializeStations:44 Key = station.4
+ - 02:25:36 DEBUG - main [Router]:initializeStations:44 Key = station.3
+ - 02:25:36 DEBUG - main [Router]:initializeStations:44 Key = station.2
+ - 02:25:36 DEBUG - main [Router]:initializeStations:44 Key = station.1
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.10
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.9
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.8
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.7
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.6
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.5
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.4
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.3
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.2
+ - 02:32:36 DEBUG - main [Router]:initializeStations:46 Key = station.1
+ - 02:32:38 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 02:32:38 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 02:32:39 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 02:32:40 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 02:32:40 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 02:32:40 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 02:32:41 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 02:32:41 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 02:32:43 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 02:32:43 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 02:35:14 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 02:35:16 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 02:35:16 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 02:35:16 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 02:35:17 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 02:35:17 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 02:35:17 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 02:35:19 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 03:10:37 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 03:10:38 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 03:10:40 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 03:10:41 DEBUG - Thread-1 [Station]:connect:50 There is not bus to swap passengers
+ - 03:11:59 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 03:11:59 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 03:12:00 DEBUG - Thread-5 [Station]:connect:50 There is not bus to swap passengers
+ - 03:12:01 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 03:12:01 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 03:12:03 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 03:15:22 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 03:15:22 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 03:15:23 DEBUG - Thread-3 [Station]:connect:50 There is not bus to swap passengers
+ - 03:15:23 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 03:15:24 DEBUG - Thread-2 [Station]:connect:50 There is not bus to swap passengers
+ - 03:15:25 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
+ - 03:15:26 DEBUG - Thread-4 [Station]:connect:50 There is not bus to swap passengers
  - 

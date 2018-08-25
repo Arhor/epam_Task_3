@@ -7,28 +7,25 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import by.epam.task3.model.Bus;
-import by.epam.task3.model.Route;
 import by.epam.task3.service.Router;
 
 public class Runner {
     
     private static final Logger LOG = LogManager.getLogger(Runner.class);
+    public static final int DEPOT_SIZE = 5;
 
     public static void main(String[] args) {
         
-        Route one = Route.FIRST;
-        Route two = Route.SECOND;
+        Router router = Router.ROUTER;
         
-        Router.initialize();
-        Router.setRoute(one);
-        Router.setRoute(two);
-        
-        LOG.info("Total before: " + Router.countPassengers() + "\n");
+        LOG.info("Total passengers before: " + router.countPassengers() + "\n");
         
         List<Bus> busDepot = new ArrayList<>();
-        for (int i = 0; i < 5; i ++) {
-            Route toAdd = Math.random() > 0.5 ? one : two;
-            busDepot.add(new Bus(i + 1, toAdd));
+        int[] availible = router.getAvailibleRoutes();
+        for (int i = 1; i <= DEPOT_SIZE; i ++) {
+            int routeId = availible[(int)(Math.random()*availible.length)];
+            busDepot.add(new Bus(i, router.getRoute(routeId)));
+            LOG.info("Bus #" + i + " goes on the route #" + routeId + "\n");
         }
         
         for (Bus bus : busDepot) {
@@ -43,6 +40,6 @@ public class Runner {
             Thread.currentThread().interrupt();
         }
         
-        LOG.info("Total after: " + (Router.countPassengers()) + "\n");
+        LOG.info("Total passengers after: " + router.countPassengers() + "\n");
     }
 }
