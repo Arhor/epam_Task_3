@@ -91,6 +91,8 @@ public class Station {
     }
 
     /**
+     * Gets amount of passengers which are going to enter the bus according
+     * to number of free seats in the bus
      * 
      * @param bus - bus for passengers to enter to
      * @return number of passengers 
