@@ -6,6 +6,8 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import by.epam.task3.service.Route;
+
 public class Bus extends Thread {
 
     private static final Logger LOG = LogManager.getLogger(Bus.class);
@@ -29,7 +31,7 @@ public class Bus extends Thread {
         for (int i = 0; i < route.size(); i++) {
         	if (i == route.size() - 1) {
         		toDepot = true;
-        		LOG.info("Bus #"+ busNumber + " is moving to depot...\n");
+        		LOG.info("\nBus #"+ busNumber + " is moving to depot...\n");
         	}
             Station current = route.get(i);
             current.connect(this);

@@ -18,7 +18,7 @@ public class Runner {
         
         Router router = Router.ROUTER;
         
-        LOG.info("Total passengers before: " + router.countPassengers() + "\n");
+        LOG.info("\nTotal passengers before: " + router.countPassengers() + "\n\n");
         
         List<Bus> busDepot = new ArrayList<>();
         int[] availible = router.getAvailibleRoutes();
@@ -40,6 +40,6 @@ public class Runner {
             Thread.currentThread().interrupt();
         }
         
-        LOG.info("Total passengers after: " + router.countPassengers() + "\n");
+        LOG.info("\nTotal passengers after: " + router.countPassengers() + "\n");
     }
 }

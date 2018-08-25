@@ -7,7 +7,6 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import by.epam.task3.model.Route;
 import by.epam.task3.model.Station;
 
 public enum Router {
@@ -40,7 +39,7 @@ public enum Router {
             Station station = new Station(name);
             station.setPassengers((int)(Math.random() * 100 + 1));
             stations.put(id, station);
-            LOG.info("Initialized: " + station + "\n");
+            LOG.info("Initialized: " + station);
         }
     }
     

@@ -1,14 +1,16 @@
-package by.epam.task3.model;
+package by.epam.task3.service;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import by.epam.task3.model.Station;
 
 public class Route {
 
 	private int id;
     private List<Station> route = new ArrayList<Station>();
     
-    public Route(int id) {
+    Route(int id) {
     	this.id = id;
     }
     

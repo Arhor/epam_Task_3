@@ -30,7 +30,7 @@ public class Station {
     public void connect(Bus bus) {
         try {
             semaphore.acquire();
-            LOG.info(String.format("Bus #%d arrived to '%s' station%n",
+            LOG.info(String.format("Bus #%d arrived to '%s' station",
                     bus.getBusNumber(), name));
             bus.setExchanger(ex);
             int leaving = bus.leaving();
@@ -42,18 +42,18 @@ public class Station {
                             TimeUnit.MILLISECONDS);
                     LOG.info("Before: " + bus.getPassengers() 
                             + " in the bus #" + bus.getBusNumber()
-                            + " at station [" + name + "]\n");
+                            + " at station [" + name + "]");
                 } catch (InterruptedException e) {
                     LOG.error("Interrupted exception occured", e);
                     Thread.currentThread().interrupt();
                 } catch (TimeoutException e) {
-                    LOG.debug("There is not bus to swap passengers\n");
+                    LOG.debug("There is not bus to swap passengers");
                 } finally {
                     if (swap > -1) {
                         bus.setPassengers(swap);
                         LOG.info(" After: " + bus.getPassengers()
                                 + " in the bus #" + bus.getBusNumber()
-                                + " at station [" + name + "]\n");
+                                + " at station [" + name + "]");
                     }    
                 }
             }
@@ -61,7 +61,7 @@ public class Station {
             bus.entering(entering);
             passengers += leaving;
             LOG.info(String.format("Bus #%d departed from '%s' station:"
-                    + " %d left, %d entered, %d swapped%n",
+                    + " %d left, %d entered, %d swapped",
                     bus.getBusNumber(), name, leaving, entering,
                     (swap == -1 ? 0 : swap)));
         }catch(InterruptedException e) {
