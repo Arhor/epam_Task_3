@@ -10,6 +10,8 @@ import by.epam.task3.service.Route;
 
 public class Bus extends Thread {
 
+    public final int MAX_CAPACITY = 25;
+
     private static final Logger LOG = LogManager.getLogger(Bus.class);
     
     private int busNumber;
@@ -18,8 +20,6 @@ public class Bus extends Thread {
     private Route route;
     
     private Exchanger<Integer> exchanger;
-    
-    public final int MAX_CAPACITY = 25;
     
     public Bus(int busNumber, Route route) {
         this.busNumber = busNumber;

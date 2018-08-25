@@ -10,9 +10,9 @@ import by.epam.task3.model.Bus;
 import by.epam.task3.service.Router;
 
 public class Runner {
-    
-    private static final Logger LOG = LogManager.getLogger(Runner.class);
+
     public static final int DEPOT_SIZE = 5;
+    private static final Logger LOG = LogManager.getLogger(Runner.class);
 
     public static void main(String[] args) {
         

@@ -10,16 +10,15 @@ import org.apache.logging.log4j.Logger;
 import by.epam.task3.model.Station;
 
 public enum Router {
-    
+
     ROUTER;
-    
-    private final Logger LOG = LogManager.getLogger(Router.class);
-    
+
     public static final String STATIONS = "resources/stations.properties";
     public static final String ROUTES = "resources/routes.properties";
 
+    private final Logger LOG = LogManager.getLogger(Router.class);
+
     private HashMap<Integer, Station> stations;
-    
     private HashMap<Integer, Route> routes;
     
     Router() {

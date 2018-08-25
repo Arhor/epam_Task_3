@@ -7,8 +7,6 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
-
 public abstract class PropertiesHandler {
     
     private static final Logger LOG = LogManager.getLogger();
