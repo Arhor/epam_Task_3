@@ -10,7 +10,7 @@ import java.util.List;
 import by.epam.task3.model.Station;
 
 /**
- * 
+ * Class route encapsulates list of stations 
  * 
  * @version 2.0 25 Aug 2018
  * @author Maxim Burishinets

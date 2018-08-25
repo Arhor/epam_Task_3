@@ -12,7 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * 
+ * Class PropertiesHandler provides easy way to get properties-object
  * 
  * @version 1.0 25 Aug 2018
  * @author Maxim Burishinets

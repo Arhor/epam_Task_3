@@ -13,27 +13,22 @@ import org.apache.logging.log4j.Logger;
 import by.epam.task3.model.Bus;
 import by.epam.task3.service.Router;
 
-/**
- * 
- * 
- * @version 1.0 25 Aug 2018
- * @author Maxim Burishinets
- */
 public class Runner {
 
     public static final int DEPOT_SIZE = 5;
+    
     private static final Logger LOG = LogManager.getLogger(Runner.class);
 
     public static void main(String[] args) {
         
         Router router = Router.ROUTER;
         
-        LOG.info("\nTotal passengers before: "
-                + router.countPassengers() + "\n\n");
+        router.countPassengers();
         
         List<Bus> busDepot = new ArrayList<>();
-        int[] availible = router.getAvailibleRoutes();
+        int[] availible = router.getAvailableRoutes();
         for (int i = 1; i <= DEPOT_SIZE; i ++) {
+        	// randomly set route ID to the newly created bus
             int routeId = availible[(int)(Math.random()*availible.length)];
             busDepot.add(new Bus(i, router.getRoute(routeId)));
             LOG.info("Bus #" + i + " goes on the route #" + routeId + "\n");
@@ -51,7 +46,6 @@ public class Runner {
             Thread.currentThread().interrupt();
         }
         
-        LOG.info("\nTotal passengers after: "
-                + router.countPassengers() + "\n");
+        router.countPassengers();
     }
 }

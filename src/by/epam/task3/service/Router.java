@@ -14,7 +14,8 @@ import org.apache.logging.log4j.Logger;
 import by.epam.task3.model.Station;
 
 /**
- * 
+ * Class Router initializes lists of stations and routes and gets routes by
+ * their id, implements thread-safety Singltone
  * 
  * @version 2.0 25 Aug 2018
  * @author Maxim Burishinets
@@ -38,6 +39,9 @@ public enum Router {
         initializeRoutes();
     }
     
+    /**
+     * Initializes map of stations and their IDs according to properties file
+     */
     private void initializeStations() {
         Properties prop = PropertiesHandler.readProperties(STATIONS);
         Iterator<Object> iterator = prop.keySet().iterator();
@@ -52,6 +56,9 @@ public enum Router {
         }
     }
     
+    /**
+     * Initializes map of routes according to properties file
+     */
     private void initializeRoutes() {
         Properties prop = PropertiesHandler.readProperties(ROUTES);
         Iterator<Object> iterator = prop.keySet().iterator();
@@ -72,7 +79,10 @@ public enum Router {
         return routes.get(id);
     }
     
-    public int[] getAvailibleRoutes() {
+    /**
+     * @return array of available routes's IDs
+     */
+    public int[] getAvailableRoutes() {
         int[] output = new int[routes.keySet().size()];
         Iterator<Integer> iterator = routes.keySet().iterator();
         for (int i = 0; i < output.length; i++) {
@@ -81,6 +91,9 @@ public enum Router {
         return output;
     }
     
+    /**
+     * @return total amount of passengers on available stations
+     */
     public int countPassengers() {
         int sum = -1;
         if (stations != null) {
@@ -89,6 +102,7 @@ public enum Router {
                 Station station = stations.get(key);
                 sum += station.getPassengers();
             }
+            LOG.info("\nTotal passengers: " + sum + "\n\n");
         }
         return sum;
     }
