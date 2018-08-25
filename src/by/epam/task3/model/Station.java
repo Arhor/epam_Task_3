@@ -107,12 +107,10 @@ public class Station {
         if (obj == this) { return true; }
         if (obj == null) { return false; }
         if (obj.getClass() != getClass()) { return false; }
-        Station station = (Station)obj;
+        Station station = (Station) obj;
         if (station.passengers != passengers) { return false; }
         if (name == null) {
-            return name == station.name;
-        } else if (!name.equals(station.name)) {
-            return false;
+            if (!name.equals(station.name)) { return false; }
         }
         return true;
     }

@@ -102,15 +102,15 @@ public class Bus extends Thread {
         if (obj == this) { return true; }
         if (obj == null) { return false; }
         if (obj.getClass() != getClass()) { return false; }
-        Bus bus = (Bus)obj;
+        Bus bus = (Bus) obj;
         if (bus.busNumber != busNumber) { return false; }
         if (bus.passengers != passengers) { return false; }
         if (bus.MAX_CAPACITY != MAX_CAPACITY) { return false; }
         if (route == null) {
-            return route == bus.route;
-        } else if (!route.equals(bus.route)) {
-            return false;
-        }
+            if (!route.equals(bus.route)) {
+                return false;
+            }
+        } 
         return true;
     }
     

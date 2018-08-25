@@ -33,4 +33,32 @@ public class Route {
     public void setId(int id) {
         this.id = id;
     }
+    
+    @Override
+    public String toString() {
+        return getClass().getSimpleName()
+                + "@"
+                + "id: " + id
+                + "stations: " + route;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) { return true; }
+        if (obj == null) { return false; }
+        if (obj.getClass() != getClass()) { return false; }
+        Route rt = (Route) obj;
+        if (rt.id != id) { return false; }
+        if (route == null) {
+            if (!route.equals(rt.route)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    @Override
+    public int hashCode() {
+        return id * 31 + route.hashCode();
+    }
 }
