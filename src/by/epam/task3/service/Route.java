@@ -7,11 +7,11 @@ import by.epam.task3.model.Station;
 
 public class Route {
 
-	private int id;
+    private int id;
     private List<Station> route = new ArrayList<Station>();
     
     Route(int id) {
-    	this.id = id;
+        this.id = id;
     }
     
     public int size() {
@@ -23,14 +23,14 @@ public class Route {
     }
     
     public void addStation(Station station) {
-    	route.add(station);
+        route.add(station);
     }
 
-	public int getId() {
-		return id;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 }

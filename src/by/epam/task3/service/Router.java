@@ -10,8 +10,8 @@ import org.apache.logging.log4j.Logger;
 import by.epam.task3.model.Station;
 
 public enum Router {
-	
-	ROUTER;
+    
+    ROUTER;
     
     private final Logger LOG = LogManager.getLogger(Router.class);
     
@@ -30,8 +30,8 @@ public enum Router {
     }
     
     private void initializeStations() {
-    	Properties prop = PropertiesHandler.readProperties(STATIONS);
-    	Iterator<Object> iterator = prop.keySet().iterator();
+        Properties prop = PropertiesHandler.readProperties(STATIONS);
+        Iterator<Object> iterator = prop.keySet().iterator();
         while (iterator.hasNext()) {
             String key = (String) iterator.next();
             int id = Integer.parseInt(key.replace("station.", ""));
@@ -47,35 +47,35 @@ public enum Router {
         Properties prop = PropertiesHandler.readProperties(ROUTES);
         Iterator<Object> iterator = prop.keySet().iterator();
         while (iterator.hasNext()) {
-        	String key = (String) iterator.next();
-        	int routeNumber = Integer.parseInt(key.replace("route.", ""));
-        	Route route = new Route(routeNumber);
-        	String[] stationNumbers = prop.getProperty(key).split(",");
-        	for (String num : stationNumbers) {
-        		Integer stationId = Integer.valueOf(num);
-        		route.addStation(stations.get(stationId));
-        	}
-        	routes.put(routeNumber, route);
+            String key = (String) iterator.next();
+            int routeNumber = Integer.parseInt(key.replace("route.", ""));
+            Route route = new Route(routeNumber);
+            String[] stationNumbers = prop.getProperty(key).split(",");
+            for (String num : stationNumbers) {
+                Integer stationId = Integer.valueOf(num);
+                route.addStation(stations.get(stationId));
+            }
+            routes.put(routeNumber, route);
        }
     }
     
     public Route getRoute(int id) {
-    	return routes.get(id);
+        return routes.get(id);
     }
     
     public int[] getAvailibleRoutes() {
-    	int[] output = new int[routes.keySet().size()];
-    	Iterator<Integer> iterator = routes.keySet().iterator();
-    	for (int i = 0; i < output.length; i++) {
-    		output[i] = iterator.next();
-    	}
-    	return output;
+        int[] output = new int[routes.keySet().size()];
+        Iterator<Integer> iterator = routes.keySet().iterator();
+        for (int i = 0; i < output.length; i++) {
+            output[i] = iterator.next();
+        }
+        return output;
     }
     
     public int countPassengers() {
-    	int sum = -1;
+        int sum = -1;
         if (stations != null) {
-        	sum = 0;
+            sum = 0;
             for (Integer key : stations.keySet()) {
                 Station station = stations.get(key);
                 sum += station.getPassengers();

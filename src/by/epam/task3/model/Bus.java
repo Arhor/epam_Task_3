@@ -15,24 +15,24 @@ public class Bus extends Thread {
     private int busNumber;
     private int passengers;
     private boolean toDepot;
-	private Route route;
-	
+    private Route route;
+    
     private Exchanger<Integer> exchanger;
     
     public final int MAX_CAPACITY = 25;
     
     public Bus(int busNumber, Route route) {
-    	this.busNumber = busNumber;
-    	this.route = route;
+        this.busNumber = busNumber;
+        this.route = route;
     }
 
     @Override
     public void run() {
         for (int i = 0; i < route.size(); i++) {
-        	if (i == route.size() - 1) {
-        		toDepot = true;
-        		LOG.info("\nBus #"+ busNumber + " is moving to depot...\n");
-        	}
+            if (i == route.size() - 1) {
+                toDepot = true;
+                LOG.info("\nBus #"+ busNumber + " is moving to depot...\n");
+            }
             Station current = route.get(i);
             current.connect(this);
             try {
@@ -86,8 +86,8 @@ public class Bus extends Thread {
     }
     
     public boolean isToDepot() {
-		return toDepot;
-	}
+        return toDepot;
+    }
 
     public void setExchanger(Exchanger<Integer> exchanger) {
         this.exchanger = exchanger;

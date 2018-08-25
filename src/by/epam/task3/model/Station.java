@@ -24,7 +24,7 @@ public class Station {
     private Condition condition = locking.newCondition();
 
     public Station(String name) {
-    	this.name = name;
+        this.name = name;
     }
     
     public void connect(Bus bus) {
@@ -73,7 +73,7 @@ public class Station {
     }
 
     public int getEntering(Bus bus) {
-    	int freeSeats = bus.getFreeSeats();
+        int freeSeats = bus.getFreeSeats();
         try {
             locking.lock();
             int entering = (int)(Math.random() * passengers + 0.5);
