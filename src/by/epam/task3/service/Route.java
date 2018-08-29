@@ -60,9 +60,9 @@ public class Route {
         Route rt = (Route) obj;
         if (rt.id != id) { return false; }
         if (route == null) {
-            if (!route.equals(rt.route)) {
-                return false;
-            }
+        	return route == rt.route;
+        } else if (!route.equals(rt.route)) {
+            return false;
         }
         return true;
     }
