@@ -132,7 +132,9 @@ public class Bus extends Thread {
         if (bus.passengers != passengers) { return false; }
         if (bus.MAX_CAPACITY != MAX_CAPACITY) { return false; }
         if (route == null) {
-        	return route == bus.route;
+        	if (bus.route != null) {
+        		return false;
+        	}
         } else if (!route.equals(bus.route)) {
             return false;
         }

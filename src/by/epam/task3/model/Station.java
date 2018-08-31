@@ -135,7 +135,9 @@ public class Station {
         Station station = (Station) obj;
         if (station.passengers != passengers) { return false; }
         if (name == null) {
-            return name == station.name;
+        	if (station.name != null) {
+        		return false;
+        	}
         } else if (!name.equals(station.name)) { 
         	return false; }
         return true;
